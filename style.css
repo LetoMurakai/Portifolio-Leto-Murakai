@@ -18,21 +18,23 @@
 #inicio {
     font-weight: bold;
     color: #fff;
-    height: 60vh;
     background-color: #000000;
     background-image: url(assets/bg-inicio.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #conhecimentos {
     justify-content: space-evenly;
     background-image: url(assets/bg-white.png);
-    background-size: cover; 
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 
 #contato {
     background-image: url(assets/bg-black.png);
     background-size: cover;
+    background-repeat: no-repeat; 
 }
 
 #sobre,
@@ -49,6 +51,7 @@
     height: 100vh;
     background-image: url(assets/bg-white.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #copy {
@@ -97,7 +100,7 @@ h2 {
 }
 
 .titulo h4 {
-    color: #9f9f9f;
+    color: #dddddd;
 }
 
 .titulo h4 span {
