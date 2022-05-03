@@ -16,9 +16,12 @@
 
 <body>
     <header id="header" class="mobile">
+        <a class="btndrop" data-toggle="collapse" data-target="#nav-principal"
+            onclick="document.querySelector('.drop-content').classList.toggle('hidden')">
+        </a>
         <div class="dropdown">
-            <a class="btndrop" data-toggle="collapse" data-target="#nav-principal"></a>
-            <div class="drop-content">
+
+            <div class="drop-content hidden">
                 <nav class="mobile">
                     <ul id="nav-principal">
                         <li><a href="#sobre">Sobre</a></li>
@@ -38,10 +41,11 @@
                 <h1>Elielthon Soares (<span> Leto </span>)</h1>
                 <h3>Desenvolvedor web frontend.</h3>
                 <h4 class="mt-1">
-                    WEB | DESIGN | <span>Freelancer</span> 🚀
+                    WEB | DESIGN | <span>Freelancer</span>
                 </h4>
+                <span class="mt-1">🚀</span>
                 <div class="flex mt-1 reveal">
-                    <a href="#sobre" class="botao-branco texto"> Saiba mais sobre mim! </a>
+                    <a href="#sobre" class="botao-branco"> Saiba mais sobre mim! </a>
                 </div>
             </article>
         </section>
@@ -56,16 +60,20 @@
                     </h4>
                 </article>
 
-                <article class="mt-1 texto">
-                    Eu sou desenvolvedor frontend e designer júnior. Tenho estudado frontend por conta e já realizei
-                    pequenos projetos para pessoas
-                    autônomas, protótipos de aplicativos e sites, além de logos, banners e fliers.<br>
-                    Participei do bootcamp da Generation Brasil, e pude ter contato com a rotina de um desenvolvedor
-                    onde desenvolvi uma rede social com minha equipe, cuidando de toda a parte Frontend e do UI Design
-                    do site.<br>
-                    Atualmente resido em Guarulhos/SP e tenho 20 anos.
+                <article class="mt-1">
+                    <p class="texto">Eu sou desenvolvedor frontend e designer júnior. Tenho estudado frontend por conta
+                        e já realizei
+                        pequenos projetos para pessoas
+                        autônomas, protótipos de aplicativos e sites, além de logos, banners e fliers.<br>
+                        Participei do bootcamp da Generation Brasil, e pude ter contato com a rotina de um desenvolvedor
+                        onde desenvolvi uma rede social com minha equipe, cuidando de toda a parte Frontend e do UI
+                        Design
+                        do site.<br>
+                        Atualmente resido em Guarulhos/SP e tenho 20 anos.
+                    </p>
                     <h4 class="flex flex-collum align-start reveal mt-1">
-                        <h3><span class="text-blue">✅ Open to Work </span></h3>
+                        <a href="https://www.linkedin.com/in/elielthon-soares/"
+                        target="_blank" class="text-blue"><h3><span>✅ Open to Work </span></h3></a>
                     </h4>
                 </article>
 

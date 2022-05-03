@@ -310,13 +310,16 @@ article {
     letter-spacing: .1em;
 }
 
-.texto {
-    line-height: 1.5em;
+p.texto {
+    line-height: 1.8em;
     letter-spacing: .1em;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .text-blue {
     color: #00A3FF;
+    text-decoration: none;
 }
 
 .my-4 {
@@ -472,29 +475,27 @@ article {
         border: none;
     }
 
-    .btndrop::after {
+    .btndrop::before {
         color: #00A3FF;
         content: "\2913";
         -moz-content: "\2913";
         -webkit-content: "\2913";
         -o-content: "\2913";
-        transition: transform .80s ease-in-out;
-    }
-
-    .btndrop:hover::after {
-        transform: rotate(180deg);
-        transition: transform .80s ease-in-out;
+        
     }
 
     nav.mobile {
         display: none;
-
     }
 
-    .dropdown:hover nav.mobile {
+    .dropdown nav.mobile {
         display: flex;
         flex-flow: column;
         align-items: center;
+    }
+
+    .hidden{
+        display: none;
     }
 
     @media only Screen and (min-width: 339.98px) {
@@ -576,6 +577,10 @@ article {
     input {
         margin: 0 auto
     }
+    .align-start{
+        text-align: center;
+        align-content: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -598,10 +603,12 @@ article {
         align-self: stretch;
         justify-content: center;
     }
-
     .list div img {
         width: 80px;
         filter: invert();
         transition: .5s;
+    }
+    p.texto {
+        font-size: 15px;
     }
 }
